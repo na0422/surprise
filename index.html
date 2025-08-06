@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slayyy Baddie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone&family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="section1" class="section">
+        <h1 class="birthstone-regular">Happy Birthday</h1>
+        <h1 class="michroma-regular">DHRITI 🎉🩷</h1>
+        <h3 class="michroma-regular2">READY FOR YOUR SURPRISE?</h3>
+        <div class="center-container">
+          <button class="button" onclick="goToSection2()">LET'S GO!</button>
+        </div>
+      </div>
+      <div id="section2" class="section">
+        <img
+          src="images/pics/selfie.jpg"
+          alt="Surprise Picture"
+          class="section-content"
+        />
+        <p>
+          Your life is basically a meme, and I’m just here for the comments.
+          Love you anyway. 💬📲
+        </p>
+        <div class="center-container">
+          <button class="arrow" onclick="goToSection3()">↓</button>
+        </div>
+      </div>
+      <div id="section3" class="section">
+        <video
+          src="images/pics/saree.mp4"
+          autoplay
+          muted
+          loop
+          class="section-content"
+        ></video>
+        <p>
+          May your birthday be like your replies — occasionally late, but always
+          worth it. ⏰❤️
+        </p>
+        <div class="center-container">
+          <button class="arrow" onclick="window.location.href='home.html'">
+            →
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function goToSection2() {
+        const section1 = document.getElementById("section1");
+        const section2 = document.getElementById("section2");
+        section1.style.transform = "translateX(-100vw)";
+        section2.style.transform = "translateX(0)";
+        setTimeout(() => {
+          section1.style.transition = "none";
+          section1.style.transform = "translateX(-100vw)";
+          setTimeout(() => {
+            section1.style.transition = "transform 0.5s ease";
+          }, 10);
+        }, 500);
+      }
+
+      function goToSection3() {
+        const section2 = document.getElementById("section2");
+        const section3 = document.getElementById("section3");
+        section2.style.transform = "translateY(100vh)";
+        section3.style.transform = "translateY(0)";
+        setTimeout(() => {
+          section2.style.transition = "none";
+          section2.style.transform = "translateY(-100vh)";
+          setTimeout(() => {
+            section2.style.transition = "transform 0.5s ease";
+          }, 10);
+        }, 500);
+      }
+
+      function goToSection1() {
+        const section3 = document.getElementById("section3");
+        const section1 = document.getElementById("section1");
+        section3.style.transform = "translateX(100vw)";
+        section1.style.transform = "translateX(0)";
+        setTimeout(() => {
+          section3.style.transition = "none";
+          section3.style.transform = "translateX(-100vw)";
+          setTimeout(() => {
+            section3.style.transition = "transform 0.5s ease";
+          }, 10);
+        }, 500);
+      }
+    </script>
+  </body>
+</html>
