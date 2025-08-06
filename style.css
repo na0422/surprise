@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("/images/bgdday.jpg");
+  background-image: url("bgdday.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -258,4 +258,5 @@ body {
   .arrow {
     font-size: 1.5rem;
   }
+
 }
