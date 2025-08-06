@@ -137,7 +137,7 @@ body {
 }
 
 #section2 {
-  transform: translateX(200vh);
+  transform: translateX(200%);
 }
 
 #section3 {
@@ -260,4 +260,5 @@ body {
   }
 
 }
+
 
